@@ -1,0 +1,43 @@
+form {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+}
+
+form .section_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form .subsection {
+    display: inline;    
+}
+
+.box_container, .checkbox_text_container  {
+    /* margin: 50px 0px; */
+    padding: 10px 0px;
+}
+
+form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin-left: 5px;
+    flex: 1;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    margin-top: 10px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Doc PDF</title>
+</head>
+
+<body>
+    <h1>Mi página web imprimible</h1>
+    <form>
+        <div class="box_containes">
+            <div class="section_container">
+                <label>Procedencia:</label>
+                <label><input type="checkbox" name="procedencia" value="traslado"> Traslado</label>
+                <label><input type="checkbox" name="procedencia" value="urgencias"> Urgencias</label>
+                <label><input type="checkbox" name="procedencia" value="programado"> Programado</label>
+                <label><input type="checkbox" name="procedencia" value="otro"> Otro</label>
+                <label for="text_procedencia">
+                    <input type="text" name="text_procedencia" id="text_procedencia">
+                </label>
+            </div>
+            <div class="section_container">
+                <label>Motivo de ingreso:</label>
+                <input type="text" name="motivo_ingreso">
+            </div>
+            <div class="section_container">
+                <label>Tratamiento domiciliario:</label>
+                <textarea name="tratamiento_domiciliario"></textarea>
+            </div>
+        </div>
+
+
+
+        <div class="section_container">
+            <label>Alergias:</label>
+            <div>
+                <label><input type="checkbox" name="alergias" value="si"> Sí</label>
+                <label><input type="checkbox" name="alergias" value="no"> No</label>
+            </div>
+        </div>
+
+        <div class="checkbox_text_container">
+            <label>Hábitos tóxicos:</label>
+            <div>
+                <label for="tabaco">Tabaco:</label>
+                <div>
+                    <label><input type="checkbox" name="tabaco" value="si"> Si</label>
+                    <label><input type="checkbox" name="tabaco" value="no"> No</label>
+                    <label for="text_tabaco"> Num. cig./dia:
+                        <input type="text" name="text_tabaco" id="text_tabaco">
+                    </label>
+
+                </div>
+            </div>
+            <div>
+                <label for="alcohol">Alcohol:</label>
+                <div>
+                    <label><input type="checkbox" name="alcohol" value="si"> Si</label>
+                    <label><input type="checkbox" name="alcohol" value="no"> No</label>
+                    <label for="text_alcohol"> Cantidad:
+                        <input type="text" name="text_alcohol" id="text_alcohol">
+                    </label>
+                </div>
+            </div>
+            <div>
+                <label for="drogas">Drogas:</label>
+                <div>
+                    <label><input type="checkbox" name="drogas" value="si"> Si</label>
+                    <label><input type="checkbox" name="drogas" value="no"> No</label>
+                    <label for="text_drogas"> Tipos:
+                        <input type="text" name="text_drogas" id="text_drogas">
+                    </label>
+                </div>
+            </div>
+            <div>
+                <label for="historia_tox">historia toxicologica:</label>
+                <div>
+                    <label><input type="checkbox" name="historia_toxicologica" value="si"> Si</label>
+                    <label><input type="checkbox" name="historia_toxicologica" value="no"> No</label>
+                </div>
+            </div>
+            <div>
+                <label>Antecedentes patológicos:</label>
+                <textarea name="antecedentes_patologicos"></textarea>
+            </div>
+        </div>
+
+        <div class="section_container">
+            <label for="entorno_familiar">Entorno familiar:</label>
+            <div>
+                <label><input type="checkbox" name="entorno_familiar" value="vive_solo"> Vive solo</label>
+                <label><input type="checkbox" name="entorno_familiar" value="en_familia"> En familia</label>
+                <label><input type="checkbox" name="entorno_familiar" value="residencia"> Residencia</label>
+                <label><input type="checkbox" name="entorno_familiar" value="otros"> Otros</label>
+            </div>
+            <div>
+                <label for="persona_contacto">Persona de contacto:</label>
+                <input type="text" name="persona_contacto">
+                <label for="tel">Teléfono:</label>
+                <input type="number" name="tel">
+            </div>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+
+</html>
