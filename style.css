@@ -1,16 +1,16 @@
-form {
+#print_section {
     background-color: white;
     padding: 20px;
     width: 50%;
 }
 
-form .section_container {
+#print_section .section_container {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-form .subsection {
+#print_section .subsection {
     display: inline;    
 }
 
@@ -19,14 +19,14 @@ form .subsection {
     padding: 10px 0px;
 }
 
-form label {
+#print_section label {
     font-weight: bold;
     margin-right: 10px;
 }
 
-form input[type="text"],
-form input[type="number"],
-form textarea {
+#print_section input[type="text"],
+#print_section input[type="number"],
+#print_section textarea {
     border: none;
     border-bottom: 1px solid black;
     padding: 5px;
@@ -34,10 +34,10 @@ form textarea {
     flex: 1;
 }
 
-form input[type="checkbox"] {
+#print_section input[type="checkbox"] {
     margin-right: 5px;
 }
 
-form input[type="submit"] {
+#print_section input[type="submit"] {
     margin-top: 10px;
 }
