@@ -20,9 +20,8 @@
             html2canvas($("#print_section")[0],{
                 allowTaint:true,
                 useCORS: true,
-                scale: 1
+                scale: 3
             }).then(canvas => {
-                $("body").append(canvas);
                 var img = canvas.toDataURL("image/png");
     
                 var doc = new jsPDF();
