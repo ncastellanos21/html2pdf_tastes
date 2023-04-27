@@ -1,7 +1,21 @@
 #print_section {
+    /* display: flex; */
     background-color: white;
     padding: 20px;
-    width: 50%;
+}
+
+.columns2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.line_section {
+    margin-right: 80px;
+}
+
+label {
+    font-size: 10px;
 }
 
 #print_section .section_container {
@@ -11,10 +25,11 @@
 }
 
 #print_section .subsection {
-    display: inline;    
+    display: inline;
 }
 
-.box_container, .checkbox_text_container  {
+.box_container,
+.checkbox_text_container {
     /* margin: 50px 0px; */
     padding: 10px 0px;
 }
@@ -40,4 +55,27 @@
 
 #print_section input[type="submit"] {
     margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: auto;
+    resize: none;
+}
+
+.title-3 {
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+}
+
+.section {
+    width: 48%;
+}
+
+.short_ip {
+    width: 80px;
+}
+
+h1 {
+    width: 1000px;
 }
